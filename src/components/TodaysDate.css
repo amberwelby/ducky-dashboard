@@ -1,0 +1,6 @@
+div .date {
+    padding: 1em;
+    border-radius: 2em;
+    border: 0.2em black solid;
+    width:fit-content;
+}
