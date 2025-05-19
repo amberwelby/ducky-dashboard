@@ -1,5 +1,6 @@
 div .date {
-    padding: 1em;
+    margin: 0.2em;
+    padding: 1em 3em;
     border-radius: 2em;
     border: 0.2em black solid;
     width:fit-content;
