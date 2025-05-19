@@ -5,3 +5,8 @@ div .date {
     border: 0.2em black solid;
     width:fit-content;
 }
+
+div .dateTime {
+    width: fit-content;
+    flex-grow: 1;
+}

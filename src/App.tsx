@@ -6,8 +6,10 @@ function App() {
 
   return (
     <>
-      <TodaysDate/>
-      <StockGrid/>
+      <div className='cols'>
+        <TodaysDate/>
+        <StockGrid/>
+      </div>
     </>
   )
 }
