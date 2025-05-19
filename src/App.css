@@ -3,7 +3,18 @@ h1 {
   margin: 0.2em;
 }
 
+h2 {
+  font-size: 3em;
+  margin: 0.2em 0em;
+}
+
+h3 {
+  font-size: 2em;
+  margin: 0em;
+  margin-bottom: 0.2em;
+}
+
 p {
-    font-size: 3em;
+    font-size: 1.2em;
     margin: 0;
 }
