@@ -1,0 +1,15 @@
+div .stock {
+    margin: 0.5em;
+    padding: 1em;
+    border-radius: 2em;
+    border: 0.2em black solid;
+    width: fit-content;
+}
+
+.gain {
+    color: green;
+}
+
+.loss {
+    color:red;
+}

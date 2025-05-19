@@ -1,0 +1,7 @@
+div .grid {
+    display: flex;
+    flex-direction: row;   
+    max-width: 50%;
+    width: fit-content;
+    flex-wrap: wrap;
+}
