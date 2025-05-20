@@ -1,4 +1,4 @@
-import './StockGrid.css'
+import '../styles/StockGrid.css'
 import { Stock } from "./Stock"
 
 export function StockGrid(){

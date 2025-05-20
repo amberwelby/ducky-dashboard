@@ -1,4 +1,4 @@
-import './Stock.css'
+import '../styles/Stock.css'
 
 export function Stock({
     ticker, 

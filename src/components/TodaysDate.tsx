@@ -1,4 +1,4 @@
-import './TodaysDate.css'
+import '../styles/TodaysDate.css'
 
 export function TodaysDate(){
     const date: Date = new Date();
