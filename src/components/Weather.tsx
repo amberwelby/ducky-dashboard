@@ -1,5 +1,6 @@
 import { fetchWeatherApi } from 'openmeteo'; // https://open-meteo.com/en/docs
 import { useEffect, useState } from 'react';
+import '../styles/Weather.css'
 
 export function Weather({
     city,
@@ -61,11 +62,16 @@ export function Weather({
     }, [lat, long]);
 
 return(
-    <div>
-        <p>{city}</p>
-        <p>Temperature: {weatherResponse.current.temperature2m}</p>
-        <p>Precipitation: {weatherResponse.current.precipitation}</p>
-        <p>UV Index: {weatherResponse.daily.uvIndexMax}</p>
+    <div className='weatherReport'>
+        <div>
+            <p>{city}</p>
+            <p>Temperature: {weatherResponse.current.temperature2m.toFixed(2)}</p>
+            <p>Precipitation: {weatherResponse.current.precipitation.toFixed(2)}</p>
+            {/* <p>UV Index: {weatherResponse.daily.uvIndexMax[0].toFixed(2)}</p> */}
+        </div>
+        <div>
+            Icon
+        </div>
         {/* It would be fun to have a amount of sunlight today graphic */}
     </div>
 )

@@ -10,7 +10,7 @@ function App() {
       <div className='cols'>
         <div className='rightCol'>
           <TodaysDate/>
-          <Weather city='Ottawa' lat='45.4201' long='-75.7003'/>
+          <Weather city='Ottawa, ON' lat='45.4201' long='-75.7003'/>
         </div>
           <StockGrid/>
       </div>

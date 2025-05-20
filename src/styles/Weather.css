@@ -1,0 +1,10 @@
+div .weatherReport{
+    margin: 0.5em;
+    padding: 1em;
+    border-radius: 1em;
+    border: 0.2em black solid;
+    width: 22em;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+}

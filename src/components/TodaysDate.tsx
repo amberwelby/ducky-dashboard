@@ -20,8 +20,7 @@ export function TodaysDate(){
         <div className='dateTime'>
             <h1>{greeting}</h1>
             <div className="date">
-                <h2>{formattedDate}</h2>
-                <h2>{formattedTime}</h2>
+                <h2>{formattedDate} {formattedTime}</h2>
             </div>
         </div>
     )

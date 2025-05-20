@@ -1,12 +1,8 @@
 div .date {
     margin: 0.5em;
-    padding: 1em 3em;
-    border-radius: 2em;
-    border: 0.2em black solid;
     width:fit-content;
 }
 
 div .dateTime {
     width: fit-content;
-    flex-grow: 1;
 }

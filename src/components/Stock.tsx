@@ -3,7 +3,8 @@ import '../styles/Stock.css'
 export function Stock({
     ticker, 
     shares,
-}:{ticker: string,
+}:{
+    ticker: string,
     shares: number,
 }){
     //temp
@@ -27,13 +28,3 @@ export function Stock({
         </div>
     )
 }
-
-/* What I want to know 
-    Ticker (display, store)
-    Name (display)
-    No. Shares (display, store)
-    Price per Share (display)
-    Total value (display)
-    Total amount spent to purchase (store)
-    Total gain/loss (display)
-*/
