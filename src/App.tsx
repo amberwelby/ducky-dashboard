@@ -8,13 +8,11 @@ function App() {
   return (
     <>
       <div className='cols'>
-        <div>
+        <div className='rightCol'>
           <TodaysDate/>
           <Weather city='Ottawa' lat='45.4201' long='-75.7003'/>
         </div>
-        <div>
           <StockGrid/>
-        </div>
       </div>
     </>
   )

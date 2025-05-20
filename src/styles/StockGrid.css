@@ -1,8 +1,8 @@
 div .grid {
     display: flex;
-    flex-direction: row;   
+    flex-direction: column;   
     width: fit-content;
     max-width: 70%;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     justify-content: end;
 }

@@ -4,22 +4,37 @@ h1 {
 }
 
 h2 {
-  font-size: 3em;
-  margin: 0.2em 0em;
+  font-size: 2em;
+  margin: 0.2em;
 }
 
 h3 {
-  font-size: 2em;
+  font-size: 1.5em;
   margin: 0em;
   margin-bottom: 0.2em;
 }
 
+h4 {
+  font-size: 1.2em;
+  margin: 0em;
+}
+
+h5 {
+  font-size: 0.8em;
+  margin: 0em;
+  color: grey;
+}
+
 p {
-    font-size: 1.2em;
+    font-size: 1em;
     margin: 0;
 }
 
 div .cols {
   display: flex;
   flex-direction: row;
+}
+
+div .rightCol {
+  flex-grow: 1;
 }

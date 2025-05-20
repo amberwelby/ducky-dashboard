@@ -1,9 +1,15 @@
 div .stock {
     margin: 0.5em;
-    padding: 1em;
-    border-radius: 2em;
-    border: 0.2em black solid;
-    width: fit-content;
+    padding: 0.1em 0.7em;
+    border-radius: 1em;
+    /* border: 0.01em #bbbbbb solid; */
+    display: flex;
+    flex-direction: row;
+    box-shadow: 8px 8px 16px #aaaaaa;
+}
+
+.stock div {
+    margin: 0.4em;
 }
 
 .gain {
