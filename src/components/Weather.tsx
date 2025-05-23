@@ -1,6 +1,7 @@
 import { fetchWeatherApi } from 'openmeteo'; // https://open-meteo.com/en/docs
 import { useEffect, useState } from 'react';
 import '../styles/Weather.css'
+import { PrecipIcon } from './PrecipIcon';
 
 export function Weather({
     city,
@@ -11,11 +12,16 @@ export function Weather({
     lat: string, 
     long: string
 }){
+    // const [precipitationType, setPrecipitationType] = useState("test");
+    // API response template of weatherData
     const [weatherResponse, setWeatherResponse] = useState({
             current: {
                 time: new Date(),
                 temperature2m: 0,
-                precipitation: 0,
+                rain: 0,
+                showers: 0, 
+                snowfall: 0,
+                isDay: 0,
             },
             daily: {
                 time: [new Date()],
@@ -29,7 +35,7 @@ export function Weather({
                 "latitude": lat,
                 "longitude": long,
                 "daily": "uv_index_max",
-                "current": ["temperature_2m", "precipitation"],
+	            "current": ["temperature_2m", "rain", "showers", "snowfall", "is_day"],             
                 "timezone": "America/New_York",
                 "forecast_days": 3
             };
@@ -47,7 +53,10 @@ export function Weather({
                 current: {
                     time: new Date((Number(current.time()) + utcOffsetSeconds) * 1000),
                     temperature2m: current.variables(0)!.value(),
-                    precipitation: current.variables(1)!.value(),
+                    rain: current.variables(1)!.value(),
+                    showers: current.variables(2)!.value(),
+                    snowfall: current.variables(3)!.value(),
+                    isDay: current.variables(4)!.value(),
                 },
                 daily: {
                     time: [...Array((Number(daily.timeEnd()) - Number(daily.time())) / daily.interval())].map(
@@ -61,16 +70,18 @@ export function Weather({
         fetchWeather();
     }, [lat, long]);
 
+    const precipitationTypes : number[] = [weatherResponse.current.rain, weatherResponse.current.showers, weatherResponse.current.snowfall, weatherResponse.current.isDay];
+
 return(
     <div className='weatherReport'>
         <div>
             <p>{city}</p>
-            <p>Temperature: {weatherResponse.current.temperature2m.toFixed(2)}</p>
-            <p>Precipitation: {weatherResponse.current.precipitation.toFixed(2)}</p>
+            <p>Temperature: {weatherResponse.current.temperature2m.toFixed(0)}&deg;C</p>
+            {/* <p>Precipitation: {precipitationType}</p> */}
             {/* <p>UV Index: {weatherResponse.daily.uvIndexMax[0].toFixed(2)}</p> */}
         </div>
         <div>
-            Icon
+            <PrecipIcon precipTypes={precipitationTypes}/>
         </div>
         {/* It would be fun to have a amount of sunlight today graphic */}
     </div>
