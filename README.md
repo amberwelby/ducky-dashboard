@@ -1,4 +1,5 @@
 # Welcome to Ducky Dashboard!
+![Yellow cartoon rubber duck named Tony](public/tony.png)
 Ducky Dashboard is here to be your quick, one-stop shop for checking in on little daily details. And realistically, cut down on how much time I spend checking these things every morning. 
 
 ## Goals
@@ -7,8 +8,9 @@ Ducky Dashboard is here to be your quick, one-stop shop for checking in on littl
 * Customizable! Rather than hardcoding information into the dashboard, I'm working on ways to easily configure and customize the dashboard
 
 ## Setup
-This dashboard is designed for personal use and to run locally on your device. From the commandline, navigate into the directory and run `npm run dev` :)
+This dashboard is intended for personal use and to run locally on your device. From the commandline, navigate into the directory and run `npm run dev` :)
 
 ## Sources
 ### Weather
 Weather data comes from [OpenMeteo](https://open-meteo.com/en/docs), which is free to use non-commercially and does not require an API key. 
+When entering lat/long information, keep in mind that the API is expecting decimal format. ie, North and East values are positive, while South and West values are negative.
