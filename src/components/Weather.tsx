@@ -89,7 +89,7 @@ export function Weather({
             <div>
                 <PrecipIcon precipTypes={precipitationTypes}/>
                 <p>Precipitation: {weatherResponse.daily.precipitationSum[0].toFixed(0)}mm</p>
-                <p>UV Index: {weatherResponse.daily.uvIndexMax[0].toFixed(0)}</p>
+                <p>UV Index: {weatherResponse.daily.uvIndexMax[0].toFixed(0)} {weatherResponse.daily.uvIndexMax[0] > 5 ? "(high)" : "(low)"}</p>
             </div>
             {/* It would be fun to have a amount of sunlight today graphic */}
         </div>
