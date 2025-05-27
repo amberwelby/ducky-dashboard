@@ -7,7 +7,7 @@ export function PrecipIcon({
     precipTypes : number[] 
 }){
     // Check docs. Provide pixels that equate to a multiplier, 14 interval, 70 max
-    const iconSize : number = 56;
+    const iconSize : number = 42;
 
     // Determine predominant type
     // Rain
