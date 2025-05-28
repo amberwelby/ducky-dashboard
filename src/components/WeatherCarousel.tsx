@@ -23,30 +23,11 @@ export type WeatherReport = {
     },
 }
 
-// Move this eventually
 export type City = {
     name: string,
     lat: string, 
     long: string
 }
-
-        // {
-        //     current: {
-        //         time: new Date(),
-        //         temperature2m: 0,
-        //         rain: 0,
-        //         showers: 0, 
-        //         snowfall: 0,
-        //         isDay: 0,
-        //     },
-        //     daily: {
-        //         time: [new Date()],
-        //         uvIndexMax: new Float32Array([0]),
-        //         precipitationSum: new Float32Array([0]),
-        //         apparentTemperatureMax: new Float32Array([0]),
-        //         apparentTemperatureMin: new Float32Array([0]),
-        //     },
-        // }
 
 export function WeatherCarousel({
     cities
