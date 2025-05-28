@@ -1,6 +1,6 @@
-import '../styles/Stock.css'
+import '../styles/StockCard.css'
 
-export function Stock({
+export function StockCard({
     ticker, 
     shares,
 }:{
