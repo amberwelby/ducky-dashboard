@@ -1,5 +1,6 @@
 # Welcome to Ducky Dashboard!
-![Yellow cartoon rubber duck named Tony](public/tony.png)
+![Yellow cartoon rubber duck named Tony](public/tony.png) 
+
 Ducky Dashboard is here to be your quick, one-stop shop for checking in on little daily details. And realistically, cut down on how much time I spend checking these things every morning. 
 
 ## Goals
