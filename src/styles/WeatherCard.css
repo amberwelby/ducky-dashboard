@@ -1,10 +1,17 @@
 div .weatherReport{
+    display: flex;
+    flex-direction: row;
     margin: 0.5em;
-    padding: 1em;
+    padding: 0.75em 1em;
     border-radius: 1em;
     border: 0.2em black solid;
     width: 22em;
     justify-content: space-between;
+    align-items: center;
+}
+
+div .precipicon{
     display: flex;
-    flex-direction: row;
+    justify-content: flex-end;
+    padding-bottom: 0.5em;
 }

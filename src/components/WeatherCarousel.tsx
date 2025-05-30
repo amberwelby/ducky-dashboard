@@ -1,7 +1,6 @@
 // Carousel concept from https://codesandbox.io/p/sandbox/simple-carousel-without-external-library-oxjgu
 import { fetchWeatherApi } from 'openmeteo'; // https://open-meteo.com/en/docs
 import { useCallback, useEffect, useMemo, useState } from 'react';
-import { TbArrowBarRight } from "react-icons/tb";
 import { WeatherCard } from './WeatherCard';
 
 export type WeatherReport = {
@@ -111,10 +110,9 @@ export function WeatherCarousel({
 
     return(
         <>
-            <TbArrowBarRight onClick={moveRight}/>
             {weatherResponse.map((city, index) => {
                 return(
-                    <div key={index}>{curr === index && <WeatherCard city={city}></WeatherCard>}</div>
+                    <div key={index}>{curr === index && <WeatherCard city={city} moveRight={moveRight}></WeatherCard>}</div>
                 )
             })}
         </>
