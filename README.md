@@ -9,7 +9,7 @@ Ducky Dashboard is here to be your quick, one-stop shop for checking in on littl
 * Customizable! Rather than hardcoding information into the dashboard, I'm working on ways to easily configure and customize the dashboard
 
 ## Setup
-This dashboard is intended for personal use and to run locally on your device. From the commandline, navigate into the directory and run `npm run dev` :)
+This dashboard is intended for personal use and to run locally on your device, specifically it was designed for a 800x480 (7") screen. From the commandline, navigate into the directory and run `npm run dev` :)
 
 ## Sources
 ### Design
