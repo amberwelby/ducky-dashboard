@@ -7,6 +7,12 @@ import userConfig from '../duckyconfig-sample.json' with { type: 'json' };
 function App() {
 
   const userCities : City[] = userConfig.weather;
+  const userAPIKey : string = userConfig.tiingoAPIKey;
+  const userTickers : string[] = [];
+
+  for(let i = 0; i < userConfig.stocks.length; i++){
+    userTickers[i] = userConfig.stocks[i].ticker;
+  }
 
 //   const testCities : City[] = [
 //     {name: "Ottawa, ON", lat: "45.4201", long: "-75.7003"},
@@ -20,7 +26,7 @@ function App() {
           <TodaysDate/>
           <WeatherCarousel cities={userCities} />
         </div>
-          <StockGrid/>
+          <StockGrid apiKey={userAPIKey} tickers={userTickers}/>
       </div>
     </>
   )

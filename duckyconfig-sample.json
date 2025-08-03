@@ -4,5 +4,11 @@
         {"name": "Ottawa, ON", "lat": "45.4201", "long": "-75.7003"}, 
         {"name": "Toronto, ON", "lat": "43.6532", "long": "-79.3832"}, 
         {"name": "Vancouver, BC", "lat": "49.2827", "long": "-123.1207"}
-    ]
+    ], 
+    "stocks": [
+        {"name": "NVIDIA", "ticker": "NVDA", "shares": 1, "totalSpent": 135.58, "currency": "USD"}, 
+        {"name": "Shopify", "ticker": "SHOP", "shares": 1, "totalSpent": 147.51, "currency": "CAD"},
+        {"name": "Apple", "ticker": "AAPL", "shares": 2, "totalSpent": 400.90, "currency": "USD"}
+    ], 
+    "tiingoAPIKey": "Not logged-in or registered. Please login or register to see your API Token"
 }
